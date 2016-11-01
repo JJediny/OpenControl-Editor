@@ -23,13 +23,24 @@
           },
           "control_key": {
             "title": "Control Key",
-            "type": "string"
+            "type": "string"          
           },
           "narrative": {
             "title": "Narrative",
             "type": "array",
+            "format": "table",
             "items": {
               "properties": {
+                "subcontrol_key": {
+                  "title": "Subcontrol Key",
+                  "description": "For NIST-800-53 this serves as the subcontrol mapping (ex. AC-2a -> a is the Key)",
+                  "type": "string"
+                },
+                "title": {
+                  "title": "Title",
+                  "description": "Title for the text describing the Component's contribution to a security Control",
+                  "type": "string"
+                },                   
                 "text": {
                   "title": "Text",
                   "description": "Text describing the Component's contribution to a security Control",
